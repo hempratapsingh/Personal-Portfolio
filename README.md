@@ -28,10 +28,10 @@ This project showcases my skills, projects, education, and work experience in a 
 
  🛠️ Technologies Used
 
-  HTML5
-  CSS3 (Flexbox + Responsive Design)
-  JavaScript (DOM Manipulation)
-  Google Fonts (MedievalSharp)
+  -HTML5
+  -CSS3 (Flexbox + Responsive Design)
+  -JavaScript (DOM Manipulation)
+  -Google Fonts (MedievalSharp)
 
 
  ⚙️ How to Run
@@ -49,8 +49,8 @@ git clone https://github.com/your-username/your-repo-name.git
 
  🌙 Dark Mode
 
-  Toggle switch available in navbar
-  Saves user preference using   localStorage  
+  -Toggle switch available in navbar
+  -Saves user preference using   localStorage  
 
 
  📌 Pages Included
@@ -63,11 +63,11 @@ git clone https://github.com/your-username/your-repo-name.git
 
  💡 Future Improvements
 
-  Add backend for contact form
-  Add animations using JavaScript
-  Improve UI with advanced design
-  Add real project links
-  SEO Optimization
+  -Add backend for contact form
+  -Add animations using JavaScript
+  -Improve UI with advanced design
+  -Add real project links
+  -SEO Optimization
 
 
  🙋‍♂️ Author
