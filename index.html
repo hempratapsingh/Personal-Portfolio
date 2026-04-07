@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleBtn = document.getElementById('theme-toggle');
+
+            // Load saved theme
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+                toggleBtn.checked = true;
+            }
+
+            toggleBtn.addEventListener('change', () => {
+                document.body.classList.toggle('dark-mode');
+
+                const isDark = document.body.classList.contains('dark-mode');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Hem Pratap Singh</h1>
+
+        <nav>
+            <ul>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Front End Developer</h1>
+        <p>html only with proper layour, no styling</p>
+    </div>
+    <div class="main">
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>HTML Only Protfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Countdown Timer</li>
+                <li>Products Upcoming Page</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Work Experience</h2>
+            <div class="Work1">
+                <h3>Roadmap.sh</h3>
+                <p>Solved all the frontend projects</p>
+                <a href="https://github.com/hempratapsingh">Visit My Profile</a>
+            </div>
+            <div class="Work2">
+                <h3>OpenSource Work</h3>
+                <p>Contributed to 50 Opensource projects. Made my own projects with 200 github Stars.</p>
+                <a href="https://github.com/hempratapsingh">Visit My git hub Profile</a>
+            </div>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organised 30 Sessions</p>
+            <p>Courses I Took:</p>
+            <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithm</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discrete Mathematics</li>
+            </ul>
+        </section>
+
+    </div>
+    <div class="review">
+        <h2>Reviews From My Teachers</h2>
+        <div class="review-container">
+
+            <div class="review-card">
+                <p>Hem is a very dedicated student who always completes his work on time.</p>
+                <p>- Teacher 1</p>
+            </div>
+
+            <div class="review-card">
+                <p>He has strong problem-solving skills and great consistency.</p>
+                <p>- Teacher 2</p>
+            </div>
+
+            <div class="review-card">
+                <p>Very passionate about learning and improving every day.</p>
+                <p>- Teacher 3</p>
+            </div>
+
+        </div>
+    </div>
+    <footer>&copy; all rights reserved 2025</footer>
+</body>
+
+</html>

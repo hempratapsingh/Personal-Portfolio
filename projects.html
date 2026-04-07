@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleBtn = document.getElementById('theme-toggle');
+
+            // Load saved theme
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+                toggleBtn.checked = true;
+            }
+
+            toggleBtn.addEventListener('change', () => {
+                document.body.classList.toggle('dark-mode');
+
+                const isDark = document.body.classList.contains('dark-mode');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Hem Pratap Singh</h1>
+        <nav>
+            <ul>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="projects-page">
+
+
+        <h1>My Projects</h1>
+        <ul>
+            <li>HTML Only Portfolio - Built using pure HTML structure</li>
+            <li>Calculator - Performs basic arithmetic operations</li>
+            <li>Quiz App - Multiple choice quiz with score tracking</li>
+            <li>Countdown Timer - Timer with real-time countdown</li>
+            <li>Product Landing Page - Upcoming product showcase page</li>
+        </ul>
+        <p>These projects helped me understand frontend basics and improve problem-solving skills.</p>
+    </div>
+</body>
+
+</html>
