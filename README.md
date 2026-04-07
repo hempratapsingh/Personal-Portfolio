@@ -50,6 +50,7 @@ git clone https://github.com/your-username/your-repo-name.git
  🌙 Dark Mode
 
   -Toggle switch available in navbar
+  
   -Saves user preference using   localStorage  
 
 
@@ -64,9 +65,13 @@ git clone https://github.com/your-username/your-repo-name.git
  💡 Future Improvements
 
   -Add backend for contact form
+  
   -Add animations using JavaScript
+  
   -Improve UI with advanced design
+  
   -Add real project links
+  
   -SEO Optimization
 
 
@@ -76,6 +81,7 @@ Hem Pratap Singh
 Frontend Developer
 
 🔗 GitHub: https://github.com/hempratapsingh
+
 Project URL : https://roadmap.sh/projects/portfolio-website
 
 
